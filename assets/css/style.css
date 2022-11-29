@@ -15,6 +15,14 @@ html {
 #header {
     height: 46.5px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
 }
 
 #nav li {
@@ -23,7 +31,7 @@ html {
 }
 
 #nav>li {
-    float: left;
+    display: inline-block;
 }
 
 #nav li a {
@@ -53,6 +61,7 @@ html {
     display: none;
     width: 160px;
     position: absolute;
+    box-shadow: 0 0 10px rgba(112, 105, 107, 0.993);
 }
 
 #nav .subnav a {
@@ -61,11 +70,53 @@ html {
     line-height: 38.5px;
 }
 
-#slider {
-    height: 200px;
-    background-color: pink;
+#nav .nav-arrow-down {
+    font-size: 12px;
 }
 
-#content {}
+#header .search-btn {
+    float: right ;
+    padding: 0 24px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-weight: 900;
+    line-height: 46px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/imgs/slider/chicago.jpg') top center / cover no-repeat ;
+}
+
+#slider .text-content {
+    position: absolute ;
+    color: #fff;
+    bottom: 47px;
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 24px;
+    font-weight: 700;
+
+
+}
 
 #footer {}
