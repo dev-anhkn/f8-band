@@ -10,6 +10,14 @@ html {
     font-size: 15px;
 }
 
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
 #main {}
 
 #header {
@@ -21,6 +29,7 @@ html {
     right: 0;
     z-index: 1;
 }
+
 #nav {
     display: inline-block;
 }
@@ -75,7 +84,7 @@ html {
 }
 
 #header .search-btn {
-    float: right ;
+    float: right;
     padding: 0 24px;
 }
 
@@ -94,11 +103,11 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/imgs/slider/chicago.jpg') top center / cover no-repeat ;
+    background: url('/assets/imgs/slider/chicago.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
-    position: absolute ;
+    position: absolute;
     color: #fff;
     bottom: 47px;
     width: 100%;
@@ -106,23 +115,23 @@ html {
     transform: translateX(-50%); */
     text-align: center;
 }
+
 #slider .text-heading {
     font-weight: 500;
     font-size: 24px;
 
 }
+
 #slider .text-description {
     font-size: 15px;
     margin-top: 24px;
     font-weight: 700;
 }
 
-#content {
-
-}
+#content {}
 
 #content .content-section {
-    width: 800px;
+    width: 1000px;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
@@ -149,6 +158,36 @@ html {
     margin-top: 25px;
     text-align: justify;
     line-height: 1.5;
+}
+
+#content .members-list {
+    margin-top: 48px;
+    /* overflow: hidden; */
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100%/4);
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+/* Tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
 }
 
 #footer {}
