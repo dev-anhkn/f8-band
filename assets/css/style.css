@@ -259,7 +259,7 @@ html {
     line-height: 1.5;
 }
 
-.place-buy-btn {
+.btn.s-full-width{
     margin-top: 15px;
     color: #fff;
     background-color: #000;
@@ -268,8 +268,8 @@ html {
     display: inline-block;
 }
 
-.place-buy-btn:hover {
-    color: #fff;
+.btn.s-full-width:hover {
+    color: #000;
     background-color: #CCCCCC;
 }
 
@@ -280,9 +280,9 @@ html {
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 .modal-container {
@@ -296,11 +296,11 @@ html {
 .modal-header {
     background: #009688;
     height: 130px;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     color: #fff;
+    display: flex;
 }
 
 .modal-header i {
