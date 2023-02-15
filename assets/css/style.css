@@ -70,13 +70,14 @@ html {
 #main {}
 
 #header {
-    height: 46.5px;
+    height: 46px;
     background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -132,6 +133,14 @@ html {
     font-size: 12px;
 }
 
+#header .mobie-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobie-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 24px;
@@ -142,6 +151,15 @@ html {
     cursor: pointer;
 }
 
+#header .mobie-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobie-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-weight: 900;
@@ -177,14 +195,16 @@ html {
     font-weight: 700;
 }
 
-#content {
-}
+#content {}
 
 #content .content-section {
     width: 1000px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
