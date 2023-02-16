@@ -32,6 +32,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .row {
     margin-right: -8px;
     margin-left: -8px;
@@ -77,7 +81,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -96,7 +99,7 @@ html {
 #nav li a {
     text-decoration: none;
     line-height: 46.5px;
-    padding: 0 24px;
+    padding: 1px 24px;
     display: block;
 }
 
@@ -113,14 +116,15 @@ html {
 
 #nav li:hover .subnav {
     display: block;
-    background-color: #fff;
 }
 
 #nav .subnav {
     display: none;
-    width: 160px;
+    min-width: 160px;
     position: absolute;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(112, 105, 107, 0.993);
+
 }
 
 #nav .subnav a {
@@ -155,7 +159,7 @@ html {
     background-color: #ccc;
 }
 
-#header .mobie-menu-btn:hover .menu-icon{
+#header .mobie-menu-btn:hover .menu-icon {
     color: #000;
 }
 
@@ -231,7 +235,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 48px;
+    margin-top: 32px;
     /* overflow: hidden; */
 }
 
@@ -284,7 +288,7 @@ html {
 
 /* Places */
 .places-list {
-    padding-top: 32px;
+    padding-top: 16px;
 }
 
 .place-img {
@@ -455,6 +459,15 @@ html {
 .contact-info {
     font-size: 18px;
     line-height: 1.4;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
