@@ -173,6 +173,7 @@ html {
 #slider {
     position: relative;
     margin-top: 46px;
+    background: url('../imgs/slider/chicago.jpg');
 }
 
 #slider .slider-img {
@@ -187,6 +188,7 @@ html {
     /* left: 50%;
     transform: translateX(-50%); */
     text-align: center;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-heading {
